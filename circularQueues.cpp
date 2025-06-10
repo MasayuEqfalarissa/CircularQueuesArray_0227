@@ -3,6 +3,7 @@ using namespace std;
 
 class queues
 {
+private:
     int front, rear, max = 5;
     int queue_array[5];
 
@@ -71,6 +72,15 @@ public:
         }
         cout << "\nelements in the queue are...\n";
 
+        //jika front_position <= rear_position, iterasi dari front hingga rear
+        if (front_position <= rear_position ) {
+            while (front_position <= rear_position) {
+                cout << queue_array[front_position] << " ";
+                front_position++;
+            }
+            cout << endl;
+
+        }
         
     }
 };
