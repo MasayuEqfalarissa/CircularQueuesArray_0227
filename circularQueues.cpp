@@ -24,5 +24,11 @@ public:
             cout << "\nqueue overflow\n";
             return;
         }
+
+        //cek apakah antrian penuh
+        if (front == -1){
+            front = 0;
+            rear = 0;
+        }
     }
 }
