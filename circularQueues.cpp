@@ -45,5 +45,6 @@ public:
             cout << "queue underflow\n";
             return;
         }
+        cout << "\nthe element from the queue is: " << queue_array[front] << "\n";
     }
 }
